@@ -1,11 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moscow Parket</title>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Moscow Parket</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav>
+            <div class="container">
+                <ul class="nav">
+                    <li class="nav__logo">
+                        <a href="/index.html" class="nav__logo-link">
+                            Moscow
+                            <span class="nav__logo-link_accent">Parket</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="" class="nav__item-link"> Главная </a>
+                    </li>
+                    <li class="nav__item nav__item-dote">
+                        <a href="" class="nav__item-link"> Укладка </a>
+                        <span></span>
+                    </li>
+                    <li class="nav__item nav__item-dote">
+                        <a href="" class="nav__item-link"> Ремонт </a>
+                        <span></span>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__item-link"> О нас </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__item-link"> Блог </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="" class="nav__item-link"> Контакты </a>
+                    </li>
+
+                    <div class="contacts">
+                        <a href="" class="contacts__item">
+                            <img src="./img/whatsapp.svg" alt="" />
+                        </a>
+                        <a href="" class="contacts__item">
+                            <img src="./img/telegram.svg" alt="" />
+                        </a>
+                        <a href="" class="contacts__item">
+                            <img src="./img/gmail.svg" alt="" />
+                        </a>
+                    </div>
+
+                    <div class="number">
+                        <p class="number__scedule">8:00 - 20:00 без выходных</p>
+                        <h3 class="number__entry">+7 (963) 96-36-66</h3>
+                        <a class="number__link" href="tel:+7963963666"
+                            >Обратный звонок</a
+                        >
+                    </div>
+                </ul>
+
+                
+            </div>
+        </nav>
+
+        <header>
+            <div class="container">
+                <div class="header">
+                    
+                    <div class="header__left">
+                        <h1 class="header__left_title">
+                            Циклевка паркета <br>
+                            <span class="header__left_title-accent"
+                                >в Москве от 940р/м²</span
+                            >
+                        </h1>
+                        <p class="header__left_paragraph">
+                            Реставрация, ремонт и циклевка паркета
+                            <span class="header__left_paragraph-accent"
+                                >по выгодным ценам,
+                            </span> <br>
+                            с гарантией результата
+                        </p>
     
-</body>
+                        <form class="form__calc" action="">
+                            <h1>Сделаем расчет <br> 
+                                за 4 минуты по телефону</h1>
+                            <label for="tel">Ваш номер:</label>
+                            <input type="tel" placeholder="+7 (123) 444-00-00" name="tel" id="">
+                            <button>Получить расчет</button>
+                        </form>
+                    </div>
+    
+                    <div class="header__right">
+                        <img src="./img/header_side.png" alt="" class="header__right_img">
+    
+                        <div class="header__right_blocks">
+                            <div class="header__right_blocks-block">
+                                <img src="./img/time.svg" alt="">
+                                <h1>За 1 день <br> и без пыли</h1>
+                                <p>Циклевка паркета без пыли площадью <span class="block__p-accent">до 30 м2 производится за 1 день.</span>
+                                </p>
+                            </div>
+    
+                            <div class="header__right_blocks-block">
+                                <img src="./img/guarantee.svg" alt="">
+                                <h1>Гарантия по договору</h1>
+                                <p>Даём <span class="block__p-accent">официальную гарантию</span> на все виды услуг
+                                </p>
+                            </div>
+    
+                            <div class="header__right_blocks-block">
+                                <img src="./img/experience.svg" alt="">
+                                <h1>Больше <br> 5 лет опыта</h1>
+                                <p>Работают мастера 
+                                    с опытом от 5 лет, <span class="block__p-accent">имеющие гражданство РФ</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__phone">
+                    <ul class="nav__phone">
+                        <div class="nav__phone-line1">
+                            <li class="nav__logo">
+                                <a href="/index.html" class="nav__logo-link">
+                                    Moscow
+                                    <span class="nav__logo-link_accent">Parket</span>
+                                </a>
+                            </li>
+                            <div class="contacts">
+                                <a href="" class="contacts__item">
+                                    <img src="./img/whatsapp.svg" alt="" />
+                                </a>
+                                <a href="" class="contacts__item">
+                                    <img src="./img/telegram.svg" alt="" />
+                                </a>
+                                <a href="" class="contacts__item">
+                                    <img src="./img/gmail.svg" alt="" />
+                                </a>
+                            </div>
+                        </div>
+    
+                        <div class="nav__phone-line2">
+                            <div class="number">
+                                <p class="number__scedule">8:00 - 20:00 без выходных</p>
+                                <h3 class="number__entry">+7 (963) 96-36-66</h3>
+                                <a class="number__link" href="tel:+7963963666"
+                                    >Обратный звонок</a
+                                >
+                            </div>
+                            <div class="burger__btn"></div>
+                        </div>
+    
+                        <div class="burger__list">
+                            <li class="nav__item">
+                                <a href="" class="nav__item-link"> Главная </a>
+                            </li>
+                            <li class="nav__item nav__item-dote">
+                                <a href="" class="nav__item-link"> Укладка </a>
+                                <span></span>
+                            </li>
+                            <li class="nav__item nav__item-dote">
+                                <a href="" class="nav__item-link"> Ремонт </a>
+                                <span></span>
+                            </li>
+                            <li class="nav__item">
+                                <a href="" class="nav__item-link"> О нас </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="" class="nav__item-link"> Блог </a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="" class="nav__item-link"> Контакты </a>
+                            </li>
+                        </div>
+                    </ul>
+                    <h1 class="header__left_title">
+                        Циклевка паркета 
+                        <span class="header__left_title-accent"
+                            >в Москве от 940р/м²</span
+                        >
+                    </h1>
+                    <p class="header__left_paragraph">
+                        Реставрация, ремонт и циклевка паркета
+                        <span class="header__left_paragraph-accent"
+                            >по выгодным ценам,
+                        </span> <br>
+                        с гарантией результата
+                    </p>
+                    <img src="./img/header_side.png" alt="" class="header__right_img">
+
+                    <div class="header__right_blocks">
+                        <div class="header__right_blocks-block">
+                            <img src="./img/time.svg" alt="">
+                            <h1>За 1 день <br> и без пыли</h1>
+                            <p>Циклевка паркета без пыли площадью <span class="block__p-accent">до 30 м2 производится за 1 день.</span>
+                            </p>
+                        </div>
+
+                        <div class="header__right_blocks-block">
+                            <img src="./img/guarantee.svg" alt="">
+                            <h1>Гарантия по договору</h1>
+                            <p>Даём <span class="block__p-accent">официальную гарантию</span> на все виды услуг
+                            </p>
+                        </div>
+
+                        <div class="header__right_blocks-block">
+                            <img src="./img/experience.svg" alt="">
+                            <h1>Больше <br> 5 лет опыта</h1>
+                            <p>Работают мастера 
+                                с опытом от 5 лет, <span class="block__p-accent">имеющие гражданство РФ</span>
+                            </p>
+                        </div>
+
+                        <form class="form__calc" action="">
+                            <h1>Сделаем расчет <br> 
+                                за 4 минуты по телефону</h1>
+                            <label for="tel">Ваш номер:</label>
+                            <input type="tel" placeholder="+7 (123) 444-00-00" name="tel" id="">
+                            <button>Получить расчет</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <script src="./script.js"></script>
+    </body>
 </html>
