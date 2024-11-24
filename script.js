@@ -40,6 +40,7 @@ class ItcAccordion {
     }
     show(el) {
         const elBody = el.querySelector(".accordion__body");
+        const elBtn = el.querySelector(".accordion__btn")
         if (
             elBody.classList.contains("collapsing") ||
             el.classList.contains("accordion__item_show")
@@ -65,10 +66,11 @@ class ItcAccordion {
             elBody.style["transition"] = "";
             elBody.style["overflow"] = "";
         }, this._config.duration);
-        document.querySelector('.accordion__btn').classList.add('active')
+        elBtn.classList.add('active')
     }
     hide(el) {
         const elBody = el.querySelector(".accordion__body");
+        const elBtn = el.querySelector(".accordion__btn")
         if (
             elBody.classList.contains("collapsing") ||
             !el.classList.contains("accordion__item_show")
@@ -92,7 +94,7 @@ class ItcAccordion {
             elBody.style["transition"] = "";
             elBody.style["overflow"] = "";
         }, this._config.duration);
-        document.querySelector('.accordion__btn').classList.remove('active')
+        elBtn.classList.remove('active')
     }
     toggle(el) {
         el.classList.contains("accordion__item_show")
