@@ -1049,23 +1049,24 @@ body {
 }
 
 .work__calc {
-    background-color: #D78A48;
+    background-color: #d78a48;
     width: auto;
 }
 
 .work__calc > button {
     background-color: #fff;
-    color: #D78A48;
+    color: #d78a48;
 }
 
 .work__calc > button::before {
-    content: url('./img/calc_orange.svg');
+    content: url("./img/calc_orange.svg");
 }
 
 /* адаптив как мы работаем */
 
 @media screen and (max-width: 1227px) {
-    .work__title, .work__undertitle {
+    .work__title,
+    .work__undertitle {
         margin-left: 0;
     }
 
@@ -1081,7 +1082,7 @@ body {
     .work__block_img {
         width: -webkit-fill-available;
     }
-    
+
     .work__undertitle {
         width: 100%;
     }
@@ -1091,7 +1092,7 @@ body {
     .work__title {
         font-size: 29px;
     }
-    
+
     .work__undertitle {
         font-size: 18px;
         margin-top: 12px;
@@ -1104,5 +1105,66 @@ body {
 
     .work__calc {
         width: 280px;
+    }
+}
+
+/* наши выгоды */
+
+.benefit {
+    padding-top: 100px;
+    background-image: url("./img/header_bg.svg");
+    background-position: center;
+}
+.benefit__blocks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 13px;
+    grid-row-gap: 20px;
+}
+
+.benefit__block {
+    width: auto;
+    height: auto;
+    padding: 30px;
+    margin-right: 0;
+}
+
+.benefit__block > p {
+    font-size: 18px;
+}
+
+.benefit__block > h1 {
+    font-size: 28px;
+}
+
+.benefit__block > img {
+    width: 62px;
+}
+
+.benefit__contact {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.benefit__contact > div {
+    padding: 20px;
+}
+
+/* адаптив выгода */
+@media screen and (max-width: 980px) {
+    .benefit__contact {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .benefit__blocks {
+        display: grid
+    ;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 13px;
+        grid-row-gap: 20px;
     }
 }
