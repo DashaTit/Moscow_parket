@@ -743,6 +743,10 @@ button:hover, a:hover {
     .damage__content_item {
         width: 88%;
     }
+
+    .damage__item_img {
+        width: 280px;
+    }
 }
 
 /* цены на циклевку паркета */
@@ -1115,12 +1119,15 @@ button:hover, a:hover {
     }
 
     .work__block {
-        width: 280px;
+        width: auto;
+        padding: 10px;
     }
 
-    .work__calc {
-        width: 280px;
+    .work__block_img {
+        width: 320px;
     }
+
+    
 }
 
 /* наши выгоды */
@@ -1322,10 +1329,11 @@ button:hover, a:hover {
 
 @media screen and (max-width: 430px) {
     .equipment__block {
-        width: 280px;
+        /* width: 280px; */
+        padding: 20px;
     }
     .equipment__block > img {
-        width: inherit;
+        width: 280px;
     }
 }
 
