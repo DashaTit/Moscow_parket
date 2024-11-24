@@ -1160,8 +1160,7 @@ body {
     }
 
     .benefit__blocks {
-        display: grid
-    ;
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 13px;
@@ -1179,9 +1178,9 @@ body {
 .equipment__blocks {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(1, 1fr);
-        grid-column-gap: 11px;
-        grid-row-gap: 20px;
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 11px;
+    grid-row-gap: 20px;
 }
 
 .equipment__block {
@@ -1200,14 +1199,16 @@ body {
     font-weight: 600;
 }
 
-.equipment__block > ul > li, .cons__info > ul > li {
+.equipment__block > ul > li,
+.cons__info > ul > li {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 8px;
 }
 
-.equipment__block > ul > li::before, .cons__info > ul > li::before {
-    content: url('./img/eclipse__orange.svg');
+.equipment__block > ul > li::before,
+.cons__info > ul > li::before {
+    content: url("./img/eclipse__orange.svg");
     margin-right: 12px;
 }
 
@@ -1250,7 +1251,7 @@ body {
 .cons__phone > button {
     border: 2px solid #d78a48;
     background-color: #d78a48;
-    padding: 20px ;
+    padding: 20px;
     font-size: 22px;
     font-weight: 600;
     border-radius: 66px;
@@ -1272,7 +1273,9 @@ body {
 @media screen and (max-width: 700px) {
     .equipment__cons {
         flex-direction: column;
+        width: auto;
     }
+
 
     .cons__phone {
         margin-top: 32px;
@@ -1284,7 +1287,8 @@ body {
         font-size: 24px;
     }
 
-    .equipment__block > ul > li, .cons__info > ul > li {
+    .equipment__block > ul > li,
+    .cons__info > ul > li {
         font-size: 16px;
     }
 
@@ -1302,11 +1306,139 @@ body {
 }
 
 @media screen and (max-width: 430px) {
-
     .equipment__block {
         width: 280px;
     }
     .equipment__block > img {
         width: inherit;
+    }
+}
+
+/* faq */
+
+.faq {
+    padding-top: 100px;
+    background-image: url("./img/header_bg.svg");
+    background-position: center;
+}
+
+.faq__title {
+    font-size: 52px;
+    font-weight: 600;
+}
+
+.orange__accent {
+    color: #d78a48;
+}
+
+.accordion {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1ftr);
+    gap: 20px;
+}
+
+.accordion__item {
+    background-color: #fff;
+    padding: 32px;
+    width: fit-content;
+}
+
+.accordion__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #212529;
+    font-weight: 600;
+    font-size: 28px;
+
+    cursor: pointer;
+    transition: background-color 0.2s ease-out;
+}
+
+.accordion__header > h1 {
+    width: 480px;
+}
+
+.accordion__btn {
+    background-image: url('./img/arrow.svg');
+    width: 50px;
+    height: 50px;
+}
+
+.accordion__btn.active {
+    background-image: url('./img/arrow__color.svg');
+    width: 60px;
+    height: 50px;
+}
+
+.accordion__content {
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+
+.accordion__content a:last-child {
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+.accordion__content a:hover {
+    background-color: #f8f9fa;
+}
+
+.accordion__item:not(.accordion__item_show) .accordion__body {
+    display: none;
+}
+
+
+/* адаптив faq */
+
+@media screen and (max-width: 1200px) {
+    .accordion {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 24px;
+    }
+
+    .accordion__item {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .faq__title {
+        font-size: 29px;
+    }
+
+    .accordion__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .accordion__header > h1 {
+        width: -webkit-fill-available;
+        font-size: 24px;
+    }
+
+    .accordion__btn {
+        background-image: url('./img/arrow.svg');
+        width: 60px;
+    }
+
+    .accordion__item {
+        width: -webkit-fill-available;
+    }
+
+    .accordion__item {
+        background-color: #fff;
+        padding: 20px;
+        width: fit-content;
     }
 }
