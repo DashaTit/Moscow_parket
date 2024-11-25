@@ -229,11 +229,13 @@
 
                     <div class="header__right_blocks">
                         <div class="header__right_blocks-block">
-                            <img src="./img/time.svg" alt="" />
+                            <div class="block__flex">
+                                <img src="./img/time.svg" alt="" />
                             <h1>
                                 За 1 день <br />
                                 и без пыли
                             </h1>
+                            </div>
                             <p>
                                 Циклевка паркета без пыли площадью
                                 <span class="block__p-accent"
@@ -243,8 +245,9 @@
                         </div>
 
                         <div class="header__right_blocks-block">
-                            <img src="./img/guarantee.svg" alt="" />
-                            <h1>Гарантия по договору</h1>
+                            <div class="block__flex"><img src="./img/guarantee.svg" alt="" />
+                            <h1>Гарантия по договору</h1></div>
+                            
                             <p>
                                 Даём
                                 <span class="block__p-accent"
@@ -255,11 +258,12 @@
                         </div>
 
                         <div class="header__right_blocks-block">
-                            <img src="./img/experience.svg" alt="" />
+                            <div class="block__flex"><img src="./img/experience.svg" alt="" />
                             <h1>
                                 Больше <br />
                                 5 лет опыта
-                            </h1>
+                            </h1></div>
+                            
                             <p>
                                 Работают мастера с опытом от 5 лет,
                                 <span class="block__p-accent"
@@ -534,6 +538,12 @@
                                     alt=""
                                     class="price__list_img"
                                 />
+
+                                <img
+                                    src="./img/scraping_phone.png"
+                                    alt=""
+                                    class="price__list_img__phone"
+                                />
                             </div>
                             <div
                                 class="table_component"
@@ -543,10 +553,10 @@
                                 <table>
                                     <thead>
                                         <tr>
-                                            <th class="table__accent">
+                                            <th class="table__accent border_top_left">
                                                 Наименование работ
                                             </th>
-                                            <th class="table__accent">
+                                            <th class="table__accent border_top_right">
                                                 Цена руб.
                                             </th>
                                         </tr>
@@ -557,7 +567,7 @@
                                                 Циклевка барабанной/ <br />
                                                 ленточной/дисковой машиной
                                             </td>
-                                            <td>от 100₽ м²</td>
+                                            <td class="rub">от 100₽ м²</td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -566,33 +576,33 @@
                                                     <br />под ключ
                                                 </p>
                                             </td>
-                                            <td>от 500₽ м²</td>
+                                            <td class="rub">от 500₽ м²</td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 Обработка <br />
                                                 углошлифовальной машинкой
                                             </td>
-                                            <td>от 100₽ м²</td>
+                                            <td class="rub">от 100₽ м²</td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 Мелкий ремонт <br />
                                                 (заделывание трещин)
                                             </td>
-                                            <td>от 100₽ м²</td>
+                                            <td class="rub">от 100₽ м²</td>
                                         </tr>
                                         <tr>
                                             <td>Тонировка</td>
-                                            <td>от 100₽ м²</td>
+                                            <td class="rub">от 100₽ м²</td>
                                         </tr>
                                         <tr>
                                             <td>Нанесение лака/воска/масла</td>
-                                            <td>от 100₽ м²</td>
+                                            <td class="rub">от 100₽ м²</td>
                                         </tr>
                                         <tr>
-                                            <td>Установка плинтусов, м/п</td>
-                                            <td>от 100₽ шт</td>
+                                            <td class="td_left_bottom">Установка плинтусов, м/п</td>
+                                            <td class="td_right_bottom rub">от 100₽ шт</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -700,7 +710,7 @@
 
                             <div class="work__block">
                                 <span class="work__block_number num5">05</span>
-                                <h1 class="work__block_title">
+                                <h1 class="work__block_title num5__title">
                                     Прием работы <br />
                                     заказчиком и расчет
                                 </h1>
@@ -713,8 +723,7 @@
 
                             <form class="form__calc work__calc" action="">
                                 <h1>
-                                    Сделаем расчет <br />
-                                    за 4 минуты по телефону
+                                    Рассчитаем стоимость за 4 минуты
                                 </h1>
                                 <label for="tel">Ваш номер:</label>
                                 <input
@@ -743,8 +752,10 @@
                             <div
                                 class="header__right_blocks-block benefit__block"
                             >
-                                <img src="./img/departure.svg" alt="" />
+                                <div class="benefit__phone">
+                                    <img src="./img/departure.svg" alt="" />
                                 <h1>Бесплатный выезд</h1>
+                                </div>
                                 <p>
                                     Предусмотрен
                                     <span class="block__p-accent"
@@ -757,8 +768,10 @@
                             <div
                                 class="header__right_blocks-block benefit__block"
                             >
-                                <img src="./img/complexity.svg" alt="" />
-                                <h1>Любой сложности</h1>
+
+                            <div class="benefit__phone"><img src="./img/complexity.svg" alt="" />
+                                <h1>Любой сложности</h1></div>
+                                
                                 <p>
                                     Реализуем проекты
                                     <span class="block__p-accent"
@@ -770,8 +783,9 @@
                             <div
                                 class="header__right_blocks-block benefit__block"
                             >
-                                <img src="./img/experience.svg" alt="" />
-                                <h1>Больше 5 лет опыта</h1>
+                            <div class="benefit__phone"><img src="./img/experience.svg" alt="" />
+                                <h1>Больше 5 лет опыта</h1></div>
+                                
                                 <p>
                                     Работают мастера с опытом от 5 лет,
                                     <span class="block__p-accent"
@@ -783,8 +797,9 @@
                             <div
                                 class="header__right_blocks-block benefit__block"
                             >
-                                <img src="./img/flag.svg" alt="" />
-                                <h1>Немецкое качество</h1>
+                            <div class="benefit__phone"><img src="./img/flag.svg" alt="" />
+                                <h1>Немецкое качество</h1></div>
+                                
                                 <p>
                                     Профессиональное оборудование
 
@@ -797,8 +812,9 @@
                             <div
                                 class="header__right_blocks-block benefit__block"
                             >
-                                <img src="./img/guarantee.svg" alt="" />
-                                <h1>Гарантия по договору</h1>
+                            <div class="benefit__phone"><img src="./img/guarantee.svg" alt="" />
+                                <h1>Гарантия по договору</h1></div>
+                                
                                 <p>
                                     Даём
                                     <span class="block__p-accent"
@@ -811,8 +827,9 @@
                             <div
                                 class="header__right_blocks-block benefit__block"
                             >
-                                <img src="./img/time.svg" alt="" />
-                                <h1>За 1 день и без пыли</h1>
+                            <div class="benefit__phone"><img src="./img/time.svg" alt="" />
+                                <h1>За 1 день и без пыли</h1></div>
+                                
                                 <p>
                                     Циклевка паркета без пыли площадью
                                     <span class="block__p-accent"
@@ -824,8 +841,9 @@
                             <div
                                 class="header__right_blocks-block benefit__block"
                             >
-                                <img src="./img/rubbish.svg" alt="" />
-                                <h1>Уберём весь мусор</h1>
+                            <div class="benefit__phone"><img src="./img/rubbish.svg" alt="" />
+                                <h1>Уберём весь мусор</h1></div>
+                                
                                 <p>
                                     Выполним
                                     <span class="block__p-accent"
@@ -838,8 +856,9 @@
                             <div
                                 class="header__right_blocks-block benefit__block"
                             >
-                                <img src="./img/postpaid.svg" alt="" />
-                                <h1>По полной постоплате</h1>
+                            <div class="benefit__phone"><img src="./img/postpaid.svg" alt="" />
+                                <h1>По полной постоплате</h1></div>
+                                
                                 <p>
                                     <span class="block__p-accent"
                                         >Оплата услуг после приемки </span
