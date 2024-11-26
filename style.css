@@ -208,6 +208,10 @@ nav {
     margin-right: 60px;
 }
 
+.dn {
+    display: none;
+}
+
 .header__left_title {
     font-size: 52px;
     font-weight: 600;
@@ -394,9 +398,10 @@ nav {
     }
 
     .burger__list.active {
+        z-index: 100;
         position: absolute;
         width: -webkit-fill-available;
-        padding: 30px;
+        padding: 30px 30px 80px 0px;
         border-radius: 10px;
         background-color: #fff;
         margin-top: 30px;
@@ -460,9 +465,15 @@ nav {
     }
 }
 
+.header__phone.active > h1, .header__phone.active > p, .header__phone.active > img, .header__phone.active > .header__right_blocks >  .header__right_blocks-block:first-child {
+    display: none;
+}
+
+
 @media screen and (max-width: 450px) {
     .nav__logo {
         margin-right: 0;
+        display: block;
     }
 
     .nav__logo-link {

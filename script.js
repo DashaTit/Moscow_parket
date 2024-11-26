@@ -1,9 +1,11 @@
 const burgerBtn = document.querySelector(".burger__btn");
 const burgerList = document.querySelector(".burger__list");
+const title = document.querySelector(".header__phone")
 
 burgerBtn.addEventListener("click", () => {
     burgerBtn.classList.toggle("active");
     burgerList.classList.toggle("active");
+    title.classList.toggle("active");
 });
 
 class ItcAccordion {
