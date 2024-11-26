@@ -1272,13 +1272,18 @@ td {
     font-weight: 600;
 }
 
+.equipment__block > ul > li > img, .cons__info > ul > li > img {
+    display: block;
+    margin-right: 13px;
+}
+
 .equipment__block > ul > li,
 .cons__info > ul > li {
+    display: flex;
+    align-items: center;
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 8px;
-    display: inline-block;
-    vertical-align: middle;
 }
 
 .cons__info > ul {
@@ -1293,13 +1298,6 @@ td {
     border-radius: 10px
 }
 
-.equipment__block > ul > li::before,
-.cons__info > ul > li::before {
-    content: url("./img/eclipse__orange.svg");
-    margin-right: 12px;
-    margin-bottom: 16px;
-    display: inline-block;
-}
 
 .equipment__cons {
     margin-top: 24px;
