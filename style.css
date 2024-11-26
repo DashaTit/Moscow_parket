@@ -377,6 +377,11 @@ nav {
         align-items: center;
     }
 
+    .nav__phone-line1 {
+        margin-top: 0;
+        padding-top: 30px;
+    }
+
     .burger__list {
         display: none;
     }
