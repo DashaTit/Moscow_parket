@@ -1525,6 +1525,7 @@ td {
     background-image: url("./img/arrow.svg");
     width: 50px;
     height: 50px;
+    background-repeat: no-repeat;
 }
 
 .accordion__content {
@@ -1569,7 +1570,7 @@ td {
     }
 
     .accordion__btn {
-        width: 53px;
+        width: 63px;
     }
 
     .accordion__header {
@@ -1582,9 +1583,6 @@ td {
         font-size: 24px;
     }
 
-    .accordion__btn.active {
-        width: 60px;
-    }
 
     .accordion__item {
         background-color: #fff;
