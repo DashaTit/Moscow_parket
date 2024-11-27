@@ -1569,7 +1569,7 @@ td {
         font-size: 29px;
     }
 
-    .accordion__btn {
+    .accordion__btn, .accordion__btn.active {
         width: 63px;
     }
 
