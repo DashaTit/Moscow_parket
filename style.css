@@ -673,6 +673,14 @@ nav {
         bottom: -5px;
         width: 280px;
     }
+
+    .item__title  {
+        font-size: 24px;
+    }
+
+    .item__list_accent {
+        font-size: 16px;
+    }
 }
 
 /* повреждения */
