@@ -240,6 +240,9 @@ nav {
 }
 
 .form__calc {
+    display: block;
+    margin: 10px auto 20px;
+    border-radius: 10px;
     width: 360px;
     background-color: #24231d;
     padding: 45px 38px;
@@ -701,6 +704,10 @@ nav {
 
     .item__list_accent {
         font-size: 16px;
+    }
+
+    .stages {
+        padding-top: 60px;
     }
 }
 
